@@ -301,7 +301,6 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:2em;
-    padding-bottom:2em;
     .resume-item{
         position:relative;
         padding:2em;
@@ -456,9 +455,10 @@ header{
     }
  }
  .party-shot{
-    margin-top:25em;
+    margin-top:23em;
  }
  .copy{
     color:var(--secondary-color);
  }
 
+ @import './mobile';
