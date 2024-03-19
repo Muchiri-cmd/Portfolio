@@ -25,3 +25,19 @@ window.addEventListener('scroll', function() {
        
     }
 });
+
+const themeSwitch=document.querySelector('.theme-switch')
+const toggleIcon=document.getElementById('toggle-icon');
+themeSwitch.addEventListener('click',function(){
+  if (toggleIcon.classList.contains('fa-toggle-off')){
+    toggleIcon.classList.remove('fa-toggle-off');
+    toggleIcon.classList.add('fa-toggle-on');
+    body.classList.add('light-mode')
+  }else{
+    toggleIcon.classList.remove('fa-toggle-on');
+    toggleIcon.classList.add('fa-toggle-off');
+    body.classList.remove('light-mode')
+  }
+
+  
+})

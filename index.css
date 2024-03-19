@@ -1,15 +1,30 @@
 :root {
   --primary-color:#020617;
-  --secondary-color1:#f59e0b;
+  --secondary-color:#f59e0b;
   --primary-transparent:rgba(2, 6, 23, 0.8);
   --grey0:#f8f8f8;
-  --grey1:#dbe1e8;
+  --grey1:#2a2e35;
   --grey2:#b2becd;
-  --grey3:#6c7893;
+  --grey3:#454e56;
   --grey4:#454e56;
   --grey5:#2a2e35;
   --grey6:#12181b;
+  --text-color:#FFFFFF;
   --transition:all .5s ease-in-out;
+}
+
+.light-mode {
+  --primary-color:#f8fafc;
+  --secondary-color:#f59e0b;
+  --primary-transparent:#f8fafc;
+  --grey0:#f8f8f8;
+  --grey1:#dbe1e8;
+  --grey2:#6c7983;
+  --grey3:#6c7893;
+  --grey4:#454e56;
+  -grey5: #f8f8f8;
+  --grey6:#12181b;
+  --text-color:black;
 }
 
 * {
@@ -22,7 +37,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-color);
   font-size: 1.2em;
 }
 
@@ -33,7 +48,7 @@ main {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .nav-link:hover {
@@ -47,13 +62,13 @@ a {
 
 .active-link {
   font-weight: bold;
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
   transition: var(--transition);
 }
 
 header {
   height: 100vh;
-  color: white;
+  color: var(--text-color);
 }
 
 .header-bar {
@@ -69,6 +84,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0em 2em;
+}
+
+.theme-switch i:hover {
+  cursor: pointer;
 }
 
 .links-div > ul > a {
@@ -132,7 +152,7 @@ header {
   font-size: 3em;
 }
 .hero-section .hero-desc .name span {
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .hero-section .hero-desc p {
   margin: 1.5em 0;
@@ -147,7 +167,7 @@ header {
 .hero-btn {
   border-radius: 30px;
   position: relative;
-  border: 1px solid var(--secondary-color1);
+  border: 1px solid var(--secondary-color);
   display: flex;
   align-self: flex-start;
   align-items: center;
@@ -159,7 +179,7 @@ header {
 }
 
 .hero-btn .btn-icon {
-  background-color: var(--secondary-color1);
+  background-color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +205,7 @@ header {
 .hero-btn:hover::before {
   width: 100%;
   height: 100%;
-  background-color: var(--secondary-color1);
+  background-color: var(--secondary-color);
   transform: translateX(0);
   transition: var(--transition);
 }
@@ -200,13 +220,13 @@ header {
   font-weight: bold;
 }
 .section-title h2 span {
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .section-title h2 .underlay-txt {
   position: absolute;
   top: 90%;
   left: 50%;
-  color: var(--grey5);
+  color: var(--grey1);
   transition: var(--transition);
   z-index: -1;
   transform: translate(-50%, -50%);
@@ -232,11 +252,11 @@ header {
 }
 .about-container .about-tiles .about-item:hover {
   transform: translateY(-5px);
-  border: 1px solid var(--secondary-color1);
+  border: 1px solid var(--secondary-color);
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 .about-container .about-tiles .about-item:hover i {
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .about-container .about-tiles .about-item .about-text {
   padding: 1.5em;
@@ -249,7 +269,7 @@ header {
 .about-container .about-left p {
   line-height: 1.5em;
   padding: 1em;
-  color: var(--grey1);
+  color: var(--text-color);
 }
 .about-container .about-left .projects-link {
   color: red;
@@ -282,7 +302,7 @@ header {
   transform: translateY(5px);
   transition: var(--transition);
   cursor: pointer;
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 
 .resume-container {
@@ -301,11 +321,11 @@ header {
   position: absolute;
   left: -0.5em;
   top: 2em;
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .resume-container .resume-item .duration {
   padding: 0.2em 0.6em;
-  background-color: var(--grey5);
+  background-color: var(--grey1);
   border-radius: 15px;
   display: inline-block;
   font-size: 0.8em;
@@ -320,14 +340,14 @@ header {
   font-weight: bold;
 }
 .resume-container .resume-item h5 span {
-  color: var(--grey5);
+  color: var(--grey1);
 }
 .resume-container .resume-item p {
   color: var(--grey2);
   margin-top: 1em;
 }
 .resume-container .resume-item a {
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .resume-container .resume-item a:hover {
   transform: scale(1.5);
@@ -353,12 +373,12 @@ header {
   border-radius: 10px;
   margin: 0.2em;
   padding: 0.2em;
-  color: var(--grey0);
+  color: var(--grey2);
 }
 .resume .resume-container .resume-work .skills-learned span:hover, .resume .resume-container .resume-education .skills-learned span:hover {
   transition: var(--transition);
   cursor: pointer;
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 
 .projects-container {
@@ -368,14 +388,14 @@ header {
   margin-top: 3em;
 }
 .projects-container .project {
-  background-color: #525252;
+  background-color: var(--grey3);
   border-radius: 5px;
   transition: var(--transition);
   position: relative;
 }
 .projects-container .project:hover {
   transition: var(--transition);
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .projects-container .project:hover img {
   transform: scale(1.05);
@@ -405,7 +425,7 @@ header {
   bottom: 0;
 }
 .projects-container .project .sources a {
-  color: var(--secondary-color1);
+  color: var(--secondary-color);
 }
 .projects-container .project i {
   margin: 1em;
@@ -438,4 +458,12 @@ header {
 .contacts-container .socials-container .social-item a img {
   height: 4em;
   border-radius: 10px;
+}
+
+.party-shot {
+  margin-top: 25em;
+}
+
+.copy {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=index.css.map */
