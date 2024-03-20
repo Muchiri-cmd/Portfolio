@@ -109,7 +109,7 @@ header {
 .section:target:before {
   content: "";
   display: block;
-  height: 135px;
+  height: 200px;
   margin: -80px 0 0;
 }
 
@@ -182,7 +182,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding: 1em;
+  padding: 0.8em;
 }
 
 .hero-btn::before {
@@ -468,7 +468,7 @@ header {
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   body {
     font-size: 0.8rem;
     width: 90vw;
@@ -479,7 +479,7 @@ header {
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
   }
   .hero-desc name {
     font-size: 1.1rem;
@@ -510,11 +510,11 @@ header {
     padding: 1rem;
   }
   .skills-container .skill-container i {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 0.5rem;
   }
   .skills-container .skill-container span {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
   .resume .btn-container {
     margin: 0.5rem 0rem;
@@ -541,14 +541,18 @@ header {
     margin-top: 2rem;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1300px) {
   body {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 150px !important;
+  }
+  .header-bar {
+    width: 100vw;
+    left: 0.5em !important;
   }
   .header-bar .nav {
     padding: 0rem 1rem;
@@ -558,9 +562,6 @@ header {
   }
   .links-div > ul > a {
     margin-right: 1rem;
-  }
-  .projects-container {
-    grid-template-columns: 1fr;
   }
   .about-container {
     padding: 1rem;
@@ -592,5 +593,8 @@ header {
   }
   .resume-container .resume-education .resume-item .skills-learned, .resume-container .resume-work .resume-item .skills-learned {
     display: none;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=index.css.map */

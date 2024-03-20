@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     body{
         font-size:.8rem;
         width:90vw;
@@ -9,7 +9,7 @@
     .hero-section {
         display: grid;
         grid-template-columns: 1fr;
-        margin-top:1rem;
+        margin-top:.2rem;
        
     }
     .hero-desc{
@@ -47,11 +47,11 @@
     .skills-container{
         .skill-container{
             i{
-                font-size:1rem;
+                font-size:1.4rem;
                 margin:.5rem;
             }
             span{
-                font-size: .8rem;
+                font-size: 1.4rem;
             }
         }
     }
@@ -89,9 +89,9 @@
 
     
  }
- @media screen and (max-width:970px){
+ @media screen and (max-width:1300px){
     body{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .hero-section {
         display: grid;
@@ -100,7 +100,8 @@
       
     }
     .header-bar{
-       
+        width:100vw;
+        left:.5em !important;
         .nav{
             padding:0rem 1rem;
             .logo-img{
@@ -112,9 +113,7 @@
         margin-right:1rem;
         
     }
-    .projects-container{
-        grid-template-columns: 1fr;
-    }
+    
     .about-container{
         padding:1rem;
         .about-tiles{
@@ -156,9 +155,10 @@
           
         }
     }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
  }
- @media screeen and (max-width:1070px){
-    
- }
+
 
  
