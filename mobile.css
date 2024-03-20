@@ -127,4 +127,19 @@
   .projects-container {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 1600px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-bar {
+    width: 100vw;
+    left: 0.5em !important;
+  }
+  .header-bar .nav {
+    padding: 0rem 1rem;
+  }
+  .header-bar .nav .logo-img {
+    margin-right: 1rem !important;
+  }
 }/*# sourceMappingURL=mobile.css.map */
