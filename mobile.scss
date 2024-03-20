@@ -19,12 +19,11 @@
         background-color:var(--primary-transparent);
     }
     .logo-img{
+        display: none !important;
+    }
+    .link-icon{
         display: none;
     }
-    .nav-link .link-text {
-        display: none;
-    }
-    
     .hero-section {
         display: grid;
         grid-template-columns: 1fr;

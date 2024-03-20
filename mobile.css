@@ -19,9 +19,9 @@
     background-color: var(--primary-transparent);
   }
   .logo-img {
-    display: none;
+    display: none !important;
   }
-  .nav-link .link-text {
+  .link-icon {
     display: none;
   }
   .hero-section {
