@@ -35,8 +35,7 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:var(--primary-color);
     color:var(--text-color);
-    font-size:1.2em;
-   
+    font-size:1.4em;
 }
 main{
     width:80vw;
@@ -379,6 +378,8 @@ header{
     grid-template-columns: repeat(3,1fr);
     grid-gap:2em;
     margin-top:3em;
+    padding:1rem;
+    margin:auto;
     .project{
         background-color: var(--grey3);
         border-radius:5px;
