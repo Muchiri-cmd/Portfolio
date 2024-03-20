@@ -3,13 +3,27 @@
     font-size: 0.8rem;
     width: 90vw;
   }
-  .header-bar {
-    display: none !important;
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  header .hero-section {
+    height: auto !important;
+    margin: auto !important;
+  }
+  .nav {
+    position: fixed;
+    width: 100vw !important;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--primary-transparent);
+  }
+  .logo-img {
+    display: none;
   }
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 0.2rem;
   }
   .hero-desc name {
     font-size: 1.1rem;
@@ -21,10 +35,8 @@
     margin: 0.5rem 0rem;
   }
   .img-container {
-    margin-top: 0.2rem;
-  }
-  .section {
-    margin-top: 1rem;
+    margin: 1rem auto !important;
+    height: 100% !important;
   }
   .about-container {
     grid-template-columns: 1fr;
@@ -59,7 +71,7 @@
     padding: 1rem;
   }
   .projects-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .projects-container .project img {
     max-height: 200px;
@@ -68,7 +80,7 @@
     gap: 1.2rem;
   }
   .party-shot {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 1300px) {
