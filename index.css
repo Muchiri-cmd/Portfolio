@@ -493,6 +493,9 @@ header {
   .link-icon {
     display: none;
   }
+  .theme-switch i {
+    font-size: 1.5rem !important;
+  }
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
