@@ -72,8 +72,55 @@
   }
 }
 @media screen and (max-width: 970px) {
+  body {
+    font-size: 1rem;
+  }
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 150px !important;
+  }
+  .header-bar .nav {
+    padding: 0rem 1rem;
+  }
+  .header-bar .nav .logo-img {
+    margin-right: 1rem !important;
+  }
+  .links-div > ul > a {
+    margin-right: 1rem;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container {
+    padding: 1rem;
+  }
+  .about-container .about-tiles {
+    gap: 1rem;
+    padding: 0.2rem;
+    max-width: 80vw;
+    grid-template-columns: 1fr;
+  }
+  .about-container .about-left p {
+    padding: 0.5rem;
+  }
+  .skills-container .skill-container {
+    margin: 0.5rem;
+  }
+  .resume-container .resume-education .resume-item, .resume-container .resume-work .resume-item {
+    padding: 1rem;
+  }
+  .resume-container .resume-education .resume-item .duration, .resume-container .resume-work .resume-item .duration {
+    padding: 0.2rem;
+  }
+  .resume-container .resume-education .resume-item h5, .resume-container .resume-work .resume-item h5 {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .resume-container .resume-education .resume-item p, .resume-container .resume-work .resume-item p {
+    margin-top: 0.5rem;
+  }
+  .resume-container .resume-education .resume-item .skills-learned, .resume-container .resume-work .resume-item .skills-learned {
+    display: none;
   }
 }/*# sourceMappingURL=mobile.css.map */

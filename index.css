@@ -67,7 +67,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  height: 100vh !important;
   color: var(--text-color);
 }
 
@@ -101,7 +101,7 @@ header {
 }
 
 .section {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   margin-top: 50px;
 }
@@ -109,7 +109,7 @@ header {
 .section:target:before {
   content: "";
   display: block;
-  height: 80px;
+  height: 135px;
   margin: -80px 0 0;
 }
 
@@ -135,10 +135,8 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(100%);
 }
 .hero-section .img-container .hero-img:hover {
-  filter: grayscale(0%);
   cursor: auto;
   transform: translateY(2%);
   transition: var(--transition);
@@ -235,7 +233,6 @@ header {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3em 0em;
 }
 .about-container .about-tiles {
   display: grid;
@@ -287,8 +284,11 @@ header {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 1em;
 }
 .skills-container .skill-container {
+  display: flex;
+  align-items: center;
   margin: 1.5em;
 }
 .skills-container .skill-container i {
@@ -356,7 +356,6 @@ header {
 .resume {
   display: flex;
   flex-direction: column;
-  padding-top: 4em;
 }
 .resume .resume-container h4 {
   margin-bottom: 1em;
@@ -435,6 +434,10 @@ header {
   padding-bottom: 1em;
 }
 
+.contacts-section {
+  height: auto;
+}
+
 .contacts-container {
   display: flex;
   margin: 2em;
@@ -457,10 +460,6 @@ header {
 .contacts-container .socials-container .social-item a img {
   height: 4em;
   border-radius: 10px;
-}
-
-.party-shot {
-  margin-top: 23em;
 }
 
 .copy {
@@ -541,8 +540,55 @@ header {
   }
 }
 @media screen and (max-width: 970px) {
+  body {
+    font-size: 1rem;
+  }
   .hero-section {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 150px !important;
+  }
+  .header-bar .nav {
+    padding: 0rem 1rem;
+  }
+  .header-bar .nav .logo-img {
+    margin-right: 1rem !important;
+  }
+  .links-div > ul > a {
+    margin-right: 1rem;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container {
+    padding: 1rem;
+  }
+  .about-container .about-tiles {
+    gap: 1rem;
+    padding: 0.2rem;
+    max-width: 80vw;
+    grid-template-columns: 1fr;
+  }
+  .about-container .about-left p {
+    padding: 0.5rem;
+  }
+  .skills-container .skill-container {
+    margin: 0.5rem;
+  }
+  .resume-container .resume-education .resume-item, .resume-container .resume-work .resume-item {
+    padding: 1rem;
+  }
+  .resume-container .resume-education .resume-item .duration, .resume-container .resume-work .resume-item .duration {
+    padding: 0.2rem;
+  }
+  .resume-container .resume-education .resume-item h5, .resume-container .resume-work .resume-item h5 {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .resume-container .resume-education .resume-item p, .resume-container .resume-work .resume-item p {
+    margin-top: 0.5rem;
+  }
+  .resume-container .resume-education .resume-item .skills-learned, .resume-container .resume-work .resume-item .skills-learned {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
