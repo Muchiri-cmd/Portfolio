@@ -18,9 +18,13 @@
         z-index:999;
         background-color:var(--primary-transparent);
     }
+    .nav-link{
+        font-size:.9rem !important;
+    }
     .logo-img{
         display: none !important;
     }
+
     .link-icon{
         display: none;
     }

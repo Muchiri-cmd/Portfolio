@@ -387,9 +387,9 @@ header{
         &:hover{
             transition:var(--transition);
             color:var(--secondary-color);
-            img{
+            
                 transform:scale(1.05)
-            }
+            
         }
         img{
             width:100%;

@@ -395,8 +395,6 @@ header {
 .projects-container .project:hover {
   transition: var(--transition);
   color: var(--secondary-color);
-}
-.projects-container .project:hover img {
   transform: scale(1.05);
 }
 .projects-container .project img {
@@ -486,6 +484,9 @@ header {
     bottom: 0;
     z-index: 999;
     background-color: var(--primary-transparent);
+  }
+  .nav-link {
+    font-size: 0.9rem !important;
   }
   .logo-img {
     display: none !important;
